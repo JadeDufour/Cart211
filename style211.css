@@ -4,6 +4,14 @@ body{
 }
 
 h1{
-    outline-color: white;
-    color:black;
+    color:rgb(187, 0, 146);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration-line: underline;
+    text-decoration-color: rgb(255, 0, 255);
+    
 }
+
+h2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
