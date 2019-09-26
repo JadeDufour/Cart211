@@ -1,7 +1,8 @@
 
+
 body{
     background-color: lightpink;
-    
+
 }
 
 h1{
@@ -9,12 +10,12 @@ h1{
     font-family: "Titillium Web";
     text-decoration-line: underline;
     text-decoration-color:rgb(169, 2, 211);
-    
+
 }
 
 h2{
     font-family:"Titillium Web";
-    
+
 }
 
 h4{
@@ -34,7 +35,7 @@ h4{
     border-style: dotted;
     border-color: hotpink;
     width: 800px;
-    
+
 }
 
 
@@ -49,9 +50,3 @@ h4{
     color: darkviolet;
     font-size: 80%;
 }
-
-    
-
-    
-
-
