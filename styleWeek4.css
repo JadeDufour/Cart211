@@ -23,7 +23,12 @@ body{
     
 }
 
+/*ARRANGER LE P1*/
 
+.p1{
+    padding-right: 15px;
+    font-family: "Turret Road";
+}
 .weekFour{
     
     position: relative;
@@ -78,4 +83,12 @@ body{
     text-justify: auto;
     box-shadow: inset 4px 4px 4px rgba(32, 71, 16, 0.801);
    
+}
+
+.h2{
+    font-family: "Turret Road";
+}
+
+.h4{
+    font-family: "Turret Road";
 }
