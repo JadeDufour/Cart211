@@ -1,0 +1,81 @@
+html{
+    height: 100%;
+}
+
+body{
+    background-color: rgb(212, 255, 95);
+    
+}
+
+
+.container{
+    background-color: rgb(205, 205, 226);
+    position: relative;
+    width: 900px;
+    height: 1080px;
+    margin-left:auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-top: 50px;
+    border-radius: 20px 20px 120px 20px;
+    box-shadow: 8px 8px gray;
+    
+}
+
+
+.weekFour{
+    
+    position: relative;
+    padding-bottom: 30px;
+    left: 80px;
+    font-size: 30px;
+    font-family: "Turret Road";
+    font-weight: bolder;
+    color: rgba(78, 78, 78, 0.904);
+    
+}
+
+.screenContour{
+    background-color: rgb(60, 60, 63);
+    position: relative;
+    width: 750px;
+    height: 500px;
+    margin-left:auto;
+    margin-right: auto;
+    border-radius: 15px 15px 80px 15px;
+}
+
+
+.power{
+  background-color:red;
+  position: relative;
+  left: 65px;
+  top:200px;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+
+}
+
+.power:hover{
+    background-color:black;
+}
+
+
+
+.smallScreen{
+    background-color: rgba(10, 165, 10, 0.822);
+    position: relative;
+    width: 450px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    top: -460px;
+    overflow: auto;
+    padding-left: 30px;
+    padding-top: 20px;
+    text-justify: auto;
+    box-shadow: inset 4px 4px 4px rgba(32, 71, 16, 0.801);
+   
+}

@@ -1,0 +1,100 @@
+
+html{
+    height: 100%;
+}
+
+
+body{
+
+    background-color: rgb(38, 58, 26);
+    background-image:url(img/bliss.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container{
+    /* the div that contains everything (header,main,footer)*/
+    margin-left:auto;
+    margin-right: auto;
+    width: 1024px;
+}
+
+footer{
+    background-color: rgba(20, 106, 146, 0.699);
+    font-size: 10px;
+    font-family: "Turret Road";
+    color: rgb(220, 229, 233);
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+}
+
+footer a{
+    /*Everything contained in the footer (specifically the text)*/
+    color: rgb(220, 229, 233);
+    font-size: 11px;
+    font-family: "Turret Road";
+    text-decoration: none;
+
+}
+
+.h2{
+    /*Text titles*/
+    font-family: "Titillium Web";
+}
+
+.h4{
+    /*by*/
+    font-family: "Turret Road";
+}
+
+header{
+
+    height: 40px;
+    width: 1024px;
+}
+
+.hr{
+    border-style: dotted;
+    width: 50%;
+}
+
+
+main{
+    background-color:rgba(106, 107, 104, 0.795);
+    height: 600px;
+    width: 1024px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    color:rgb(29, 28, 28);
+    overflow: auto;
+    /*Overflow contains the text inside the div (that's why the text is srolling)*/
+
+}
+
+
+
+nav{
+    background-color: rgba(49, 170, 60, 0.514);
+    font-size: 170%;
+    font-family: "Turret Road";
+    color: aliceblue;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.p1{
+
+    text-align:justify;
+    color: rgb(24, 24, 27);
+    font-size: 17px;
+    font-family: "Titillium Web";
+    padding-left: 30px;
+    padding-right: 30px; 
+}

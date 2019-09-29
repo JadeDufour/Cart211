@@ -5,7 +5,8 @@ body{
 
 }
 
-h1{
+.h1{
+    /*cart211*/
     color:rgb(236, 73, 168);
     font-family: "Titillium Web";
     text-decoration-line: underline;
@@ -13,18 +14,20 @@ h1{
 
 }
 
-h2{
+.h2{
+    /*ccnc*/
     font-family:"Titillium Web";
 
 }
 
-h4{
+.h4{
     font-size: 80%;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: darkorange;
 }
 
 .Wlink{
+    /*weeks pages links*/
     font-family: "Nanum Pen Script";
     font-size: 150%;
     color:rgb(206, 0, 233);
@@ -40,6 +43,7 @@ h4{
 
 
 .A{
+    /*texts list*/
     text-align: center;
     list-style-position: inside;
     list-style-type: square;
@@ -47,6 +51,7 @@ h4{
 
 
 .psource{
+    /*images sources*/
     color: darkviolet;
     font-size: 80%;
 }
