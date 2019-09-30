@@ -24,8 +24,8 @@ body{
 }
 
 .plusSign1{
-    width: 40px;
-    height: 130px;
+    width: 60px;
+    height: 160px;
     position: relative;
     background-color: gray;
     margin-left: 190px;
@@ -35,29 +35,45 @@ body{
 }
 
 .plusSign2{
-    width: 130px;
-    height: 40px;
+    width: 160px;
+    height: 60px;
     position: relative;
     background-color: gray;
-    margin-left: -45px;
+    margin-left: -50px;
     bottom: -45px;
     box-shadow: 3px 0px rgba(80, 79, 79, 0.788);
    
 }
 
 .buttonA{
-    width: 70px;
-    height: 70px;
-    background-color: rgb(80, 28, 28);
+    width: 90px;
+    height: 90px;
+    background-color: rgb(105, 38, 38);
     border-radius: 70px;
     margin-left: 700px;
-    margin-top: -200px;
+    margin-top: -220px;
     box-shadow: 3px 3px gray;    
 }
 
-/*le boutton pour go back*/
-.b{
+.buttonA:hover{
+    background-color: brown;
+    box-shadow: inset 3px 3px 3px rgb(66, 21, 21);
+}
 
+/*le boutton pour go back*/
+.buttonB{
+    width: 90px;
+    height: 90px;
+    background-color: rgb(105, 38, 38);
+    border-radius: 70px;
+    margin-left: 550px;
+    margin-top: 40px;
+    box-shadow: 3px 3px gray;    
+}
+
+.buttonB:hover{
+    background-color: brown;
+    box-shadow: inset 3px 3px 3px rgb(66, 21, 21);
 }
 
 
