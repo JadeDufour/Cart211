@@ -3,7 +3,7 @@ html{
 }
 
 body{
-    background-color: rgb(212, 255, 95);
+    background-color: rgb(217, 253, 116);
     
 }
 
@@ -30,7 +30,8 @@ body{
     background-color: gray;
     margin-left: 190px;
     margin-top: -180px;
-    box-shadow: 3px 0px 1px 0px  rgba(85, 85, 85, 0.829);
+    box-shadow: 3px 0px 0px 0px  rgba(85, 85, 85, 0.829);
+    border-radius: 3px 3px 3px 3px;
 
 }
 
@@ -42,17 +43,21 @@ body{
     margin-left: -50px;
     bottom: -45px;
     box-shadow: 3px 0px rgba(80, 79, 79, 0.788);
+    border-radius: 3px 3px 3px 3px;
    
 }
 
 .buttonA{
-    width: 90px;
-    height: 90px;
+    width: 110px;
+    height: 110px;
     background-color: rgb(105, 38, 38);
     border-radius: 70px;
-    margin-left: 700px;
+    margin-left: 650px;
     margin-top: -220px;
+    position: relative;
     box-shadow: 3px 3px gray;    
+    
+    
 }
 
 .buttonA:hover{
@@ -60,14 +65,20 @@ body{
     box-shadow: inset 3px 3px 3px rgb(66, 21, 21);
 }
 
-/*le boutton pour go back*/
+h4{
+    font-family: 'Titillium Web';
+    padding-left: 48px;
+    padding-top: 38px;
+    font-size: 135%;
+    
+}
 .buttonB{
-    width: 90px;
-    height: 90px;
+    width: 110px;
+    height: 110px;
     background-color: rgb(105, 38, 38);
     border-radius: 70px;
-    margin-left: 550px;
-    margin-top: 40px;
+    margin-left: 500px;
+    margin-top: 30px;
     box-shadow: 3px 3px gray;    
 }
 
@@ -76,6 +87,12 @@ body{
     box-shadow: inset 3px 3px 3px rgb(66, 21, 21);
 }
 
+.b{
+    text-decoration: none;
+    color: black;
+    font-size: 170%;
+    
+}
 
 .p1{
     padding-right: 15px;
@@ -134,7 +151,7 @@ body{
 
 
 .smallScreen{
-    background-color: rgba(10, 165, 10, 0.822);
+    background-color: rgba(10, 165, 10, 0.61);
     position: relative;
     width: 465px;
     height: 400px;
@@ -150,10 +167,14 @@ body{
    
 }
 
+.smallScreen:hover{
+    background-color: rgba(3, 179, 3, 0.712);
+}
+
 .h2{
     font-family: "Turret Road";
 }
 
-.h4{
+.h3{
     font-family: "Turret Road";
 }

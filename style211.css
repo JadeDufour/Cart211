@@ -5,7 +5,7 @@ body{
 
 }
 
-.h1{
+h1{
     /*cart211*/
     color:rgb(236, 73, 168);
     font-family: "Titillium Web";
@@ -14,13 +14,13 @@ body{
 
 }
 
-.h2{
+h2{
     /*ccnc*/
     font-family:"Titillium Web";
 
 }
 
-.h4{
+h4{
     font-size: 80%;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: darkorange;
