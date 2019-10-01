@@ -5,7 +5,6 @@ html{
 
 
 body{
-
     background-color: rgb(38, 58, 26);
     background-image:url(img/bliss.jpg);
     background-size: cover;
@@ -28,6 +27,7 @@ footer{
     text-align: center;
     padding-top: 15px;
     padding-bottom: 15px;
+    border-radius: 3px 3px 3px 3px;
 
 }
 
@@ -72,6 +72,7 @@ main{
     padding-top: 11px;
     padding-bottom: 11px;
     color:rgb(29, 28, 28);
+    border-radius: 3px 3px 3px 3px;
     overflow: auto;
     /*Overflow contains the text inside the div (that's why the text is srolling)*/
 
@@ -87,6 +88,7 @@ nav{
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
+    border-radius: 3px 3px 3px 3px;
 }
 
 .p1{

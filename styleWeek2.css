@@ -1,6 +1,9 @@
 body{
-    margin: auto;
     background-color: rgb(180, 227, 243);
+    background-image:url(img/blue.png);
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
 
 }
 
@@ -24,7 +27,7 @@ h3{
 }
 
 .goBack{
-    color: darkslateblue;
+    color: rgb(143, 7, 197);
     font-family: "Nanum Pen Script";
     font-size: 110%;
 }
@@ -32,19 +35,20 @@ h3{
 .div1{
   /* Top div */
   border-radius: 5px;
-  background-color:rgb(111, 206, 250);
+  background-color:rgba(111, 206, 250, 0.932);
   width: 850px;
   height: 150px;
   padding: 50px;
   margin: auto;
+  box-shadow: 4px 4px rgba(155, 77, 14, 0.61);
 }
 
 .div2{
   /* Bottom div */ 
   border-radius: 80px;
-  background-color: rgb(180, 227, 243);
+  background-color: rgba(202, 242, 255, 0.616);
   width: 850px;
-  border: 10px solid rgb(179, 233, 240);
+  border: 10px solid rgb(67, 150, 108);
   padding: 50px;
   margin: auto;
 
@@ -60,8 +64,9 @@ h3{
 
 .p1{
     /*Links at the bottom*/
-    color: rgb(59, 50, 119);
+    color: rgb(223, 126, 0);
     font-size: 80%;
+    text-decoration: none;
 }
 
 .text{

@@ -11,6 +11,7 @@ h1{
     font-family: "Titillium Web";
     text-decoration-line: underline;
     text-decoration-color:rgb(169, 2, 211);
+   
 
 }
 
@@ -37,7 +38,7 @@ h4{
     margin: auto;
     border-style: dotted;
     border-color: hotpink;
-    width: 800px;
+    width: 1000px;
 
 }
 

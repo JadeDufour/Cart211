@@ -7,6 +7,14 @@ body{
     
 }
 
+.mario{
+    width: 35px;
+    height: 40px;
+    padding-left: 180px;
+    padding-bottom: 10px;
+    
+    
+}
 
 .container{
     background-color: rgb(205, 205, 226);
@@ -18,7 +26,7 @@ body{
     margin-top: 50px;
     margin-bottom: 50px;
     padding-top: 50px;
-    border-radius: 20px 20px 120px 20px;
+    border-radius: 20px 20px 140px 20px;
     box-shadow: 8px 8px gray;
     
 }
