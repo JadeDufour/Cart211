@@ -34,7 +34,7 @@ body{
 .plusSign1{
     width: 60px;
     height: 160px;
-    position: relative;
+    /*position: relative;*/
     background-color: gray;
     margin-left: 190px;
     margin-top: -180px;
