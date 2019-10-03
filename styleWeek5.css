@@ -1,0 +1,65 @@
+html{
+    height: 100%;
+}
+
+body{
+    background-color: rgb(219, 219, 219);
+}
+
+#container{
+    position: absolute;
+    margin-left:auto;
+    margin-right: auto;
+    width: 1024px;
+    align-items: center;
+}
+
+main{
+    position: relative;
+    width: 1024px;
+    height: 600px;
+    margin-bottom: 50px;
+    text-align: center;
+    }
+
+header{
+    width: 1024px;
+    height: 20px;
+}
+
+.textError{
+    position: relative;
+    font-size: 100px;
+    font-family: 'Raleway';
+    }
+
+.smallError{
+    position: relative;
+    font-size: 110%;
+    font-family: 'Muli';
+}
+
+.otherText{
+    font-family: 'Raleway';
+    font-size: 90%;
+}
+
+footer{
+    width: 1024px;
+    height: 200px;
+}
+
+.hi{
+    list-style: none;
+    font-family: 'Cabin';
+}
+
+.imgPepe{
+    position: relative;
+    height: 100px;
+    width:100px;
+    }
+
+.f{
+    text-decoration: none;
+}
