@@ -47,6 +47,8 @@ header{
 footer{
     width: 1024px;
     height: 200px;
+    text-align: center;
+    position: absolute;
 }
 
 .hi{
@@ -61,5 +63,17 @@ footer{
     }
 
 .f{
+    text-decoration: none;
+}
+
+.p1{
+    color: rgb(58, 58, 58);
+    font-size: 80%;
+    text-decoration: none;
+}
+
+.goBack{
+    color: rgb(75, 75, 75);
+    font-size: 70%;
     text-decoration: none;
 }
