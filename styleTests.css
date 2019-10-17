@@ -61,12 +61,34 @@ header{
     width: 50%;
 }
 
-.button{
+.thebutton{
     top: 10px;
     width: 100px;
     height: 20px;
     position: relative;
 }
+
+
+
+.menubutton{
+	border:none;
+	cursor: pointer;
+}
+
+.menu{
+	position: relative;
+}
+
+.menudropdown{
+	display: none;
+}
+
+.menudropdown a{
+	
+}
+
+
+
 
 .firstbox{
     background-color:rgba(106, 107, 104, 0.795);
@@ -82,6 +104,12 @@ header{
 }
 
 
+.a1{
+	font-size: 30px;
+	color: aliceblue;
+    text-decoration: none;
+    position: relative;
+}
 
 nav{
     background-color: rgba(49, 170, 60, 0.514);

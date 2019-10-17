@@ -1,5 +1,29 @@
 var buttonTop = 0;
+var thebutton = document.querySelector('.firstbox');
 console.log('hello world');
+
+
+document.onkeydown = function(event){
+    switch (event.keyCode){
+        case 37:
+            buttonleft = buttonleft-4;
+        break;
+        case 39:
+                buttonleft = buttonleft+4;
+        break;
+}
+    
+    thebutton.style.left = buttonleft + 'px';
+}
+
+    function dropdown(){
+        //alert("clicked button");
+        document.getElementById ('menudropdown')
+
+        variable.classList.toggle("show");
+
+}
+
 
 function frame(){
     buttonTop +=2;
@@ -7,7 +31,7 @@ function frame(){
     var theButton = document.querySelector('.button');
     theButton.style.top = buttonTop + 'px';
 
-    if (buttonTop == 500){
+    if (buttonTop == 700){
         console.log("hello again world ");
         clearInterval(clock);
     }
