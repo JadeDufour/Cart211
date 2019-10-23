@@ -1,0 +1,102 @@
+html{
+    height: 100%;
+}
+
+
+body{
+    background-color: rgb(248, 251, 252);
+    background-image:url(img/wedding.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+h1{
+    /*Proposal*/
+    color: rgba(100, 100, 102, 0.884);
+    font-family: "Caveat";
+}
+
+h2{
+    /*Writing history...*/
+    font-family: "Montserrat";
+    color: rgb(56, 56, 56);
+}
+
+h3{
+    /*by*/
+    font-size: 90%;
+    color: rgb(112, 112, 112);
+    font-family: "Caveat";
+}
+
+.goBack{
+    color: rgb(87, 100, 88);
+    font-family: "Caveat";
+    font-size: 110%;
+    text-decoration: none;
+  }
+
+.div1{
+  /* Top div */
+  position: relative;
+  border-radius: 5px;
+  background-color:rgba(216, 226, 214, 0.705);
+  width: 850px;
+  height: 150px;
+  padding: 50px;
+  margin: auto;
+  margin-top: 170px;
+  text-align: center;
+ 
+}
+
+.div2{
+  /* Bottom div */ 
+  position: relative;
+  width: 1000px;
+  padding-top: 50px;
+  margin: auto;
+  margin-top: 200px;
+  text-align: justify;
+  text-justify: inter-word;
+  line-height: 1.7;
+}
+
+#div3{
+  position: relative;
+  width: 1000px;
+  margin: auto;
+  text-align: center;
+ 
+}
+
+.img1{
+   float: right;
+   padding-left: 25px;
+   padding-bottom: 15px;
+   padding-top:15px;
+   width: 350px;
+}
+
+.img2{
+    float: left;
+    padding-right: 25px;
+    padding-bottom: 15px;
+    width: 350px;
+}
+
+.img3{
+
+    padding-top;: 25px;
+    padding-bottom: 15px;
+    width: 350px;
+    align:center;
+}
+
+
+.text{
+    font-family: "Montserrat";
+  
+}
