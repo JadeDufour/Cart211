@@ -5,11 +5,15 @@ html{
 
 body{
     background-color: rgb(249, 252, 248);
+}
+
+.Container{
     background-image:url(img/wedding.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
-   
+    background-position: top;
+    height: 800px;
+    text-align: center;
 }
 
 h1{
@@ -39,28 +43,33 @@ h3{
 
 .div1{
   /* Top div */
-  position: relative;
+  position: absolute;
   border-radius: 5px;
   background-color:rgba(216, 226, 214, 0.705);
   width: 850px;
   height: 150px;
   padding: 50px;
-  margin: auto;
-  margin-top: 170px;
-  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
  
+}
+
+#proposal{
+    text-align: center;
+   
 }
 
 .div2{
   /* Bottom div */ 
   position: relative;
   width: 1000px;
-  padding-top: 200px;
+  padding-top: 20px;
   margin: auto;
-  margin-top: 400px;
   text-align: justify;
   text-justify: inter-word;
-  line-height: 1.7;
+  line-height: 1.5;
+
 }
 
 #div3{
@@ -87,15 +96,12 @@ h3{
 }
 
 .img3{
-
-    padding-top;: 25px;
+    padding-top: 25px;
     padding-bottom: 15px;
     width: 350px;
-    align:center;
-}
+  }
 
 
 .text{
     font-family: "Montserrat";
-  
-}
+  }
