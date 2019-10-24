@@ -2,7 +2,7 @@
 
 body{
     background-color: lightpink;
-    align-content: center;
+   
 }
 
 h1{
@@ -11,8 +11,11 @@ h1{
     font-family: "Titillium Web";
     text-decoration-line: underline;
     text-decoration-color:rgb(169, 2, 211);
-   
+}
 
+#big{
+    align-content: center;
+    margin: auto;
 }
 
 h2{
