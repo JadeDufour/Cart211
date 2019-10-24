@@ -4,12 +4,12 @@ html{
 
 
 body{
-    background-color: rgb(248, 251, 252);
+    background-color: rgb(249, 252, 248);
     background-image:url(img/wedding.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    
+   
 }
 
 h1{
@@ -19,7 +19,6 @@ h1{
 }
 
 h2{
-    /*Writing history...*/
     font-family: "Montserrat";
     color: rgb(56, 56, 56);
 }
@@ -56,9 +55,9 @@ h3{
   /* Bottom div */ 
   position: relative;
   width: 1000px;
-  padding-top: 50px;
+  padding-top: 200px;
   margin: auto;
-  margin-top: 200px;
+  margin-top: 400px;
   text-align: justify;
   text-justify: inter-word;
   line-height: 1.7;
