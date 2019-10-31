@@ -1,5 +1,10 @@
 var buttonTop = 0;
 var thebutton = document.querySelector('.firstbox');
+
+var student = {name: "Bob", lastName: "Doe", grade:}
+var studentname = student.name;
+
+button
 console.log('hello world');
 
 
@@ -14,6 +19,8 @@ document.onkeydown = function(event){
 }
     
     thebutton.style.left = buttonleft + 'px';
+
+    window.localStorage.setItem("xposition", buttonleft);
 }
 
     function dropdown(){
