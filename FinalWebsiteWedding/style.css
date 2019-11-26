@@ -1,0 +1,326 @@
+html{
+    height: 100%; 
+    /* background-image: url(images/franca.jpg);
+    background-size: cover; */
+    /* background-image: linear-gradient(rgb(255, 193, 211),rgb(255, 245, 245)); */
+    background-repeat: no-repeat;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(95, 85, 85);
+    scroll-behavior: smooth;
+      
+}
+
+body {
+    /* background-image: url(images/rose.png);
+    background-position: top center;
+    background-repeat: no-repeat; */
+    font-family: "Montserrat";
+    /* changed px to rem, we read it is better for visually impaired people for browsing purposes */
+    font-size: 1.2rem;
+   
+}
+
+a{
+    color: rgb(228, 171, 185);;
+    text-decoration: none;
+}
+
+
+.container {
+    width: 1024px;
+    min-height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+  
+}
+
+.container1 {
+    width: 1024px;
+    min-height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 110px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    }
+
+section{
+    margin-top: 20px;
+    margin-bottom: 120px;
+    border-bottom: 1.2px solid rgb(235, 187, 209);
+    padding-bottom: 60px;
+    align-items: center;
+}
+
+main {
+    min-height: 350px;
+    /* display: flex; */
+    align-items: center;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    text-align: center;
+    border-bottom: 1px solid rgb(248, 193, 211);
+}
+
+
+.flexBoxes {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+
+
+.fboxes1 {
+    background-image: url(images/flowers.jpg);
+    background-size: cover;
+    background-position: bottom;
+    min-height: 250px;
+    width: 30%;   
+}
+
+.fboxes2 {
+    background-image: url(images/couple.jpg);
+    background-size: cover;
+    background-position: bottom;
+    min-height: 250px;
+    width: 30%;
+}
+
+.fboxes3 {
+    background-image: url(images/twoside.jpg);
+    background-size: cover;
+    background-position: bottom;
+    min-height: 250px;
+    width: 30%;
+}
+
+.fboxes1, .fboxes2 , .fboxes3{
+    padding: 30px 30px 20px 30px;
+    box-sizing: border-box;
+    box-shadow: 3px 3px 3px rgba(177, 177, 177, 0.603);
+
+}
+/* .mainBox {
+   flex: 1;
+   padding-right: 100px;
+} */
+
+.secondBox {
+    flex: 1;
+    padding-top: 20px;
+}
+
+h1{
+    /* changed px to rem  */
+    font-size: 4rem;
+    font-family: "Caveat";
+     margin-bottom: 1rem; 
+}
+
+h2{
+    font-size: 3rem;
+    font-family: "Caveat";
+    color: rgb(243, 237, 230);
+    margin-top: 20px;
+}
+
+
+p{
+    line-height: 1.75rem;
+    margin-bottom: 0.5rem;
+}
+
+.flexBoxes p {
+    font-size: 0.7rem;
+    line-height: 1.2rem;
+    color:rgb(243, 237, 230);
+    margin-top: 10px;
+}
+
+.flexBoxes i{
+    font-size: 100px;
+    color:rgb(255, 245, 245);
+    padding-top: 30px;
+}
+
+
+.theButton{
+    background-color:white;
+    color: rgb(248, 193, 211);
+    font-family: "Montserrat";
+    padding: 10px 25px;
+    display: inline-block;
+    margin-top: 10px;
+    border-radius: 2px;
+    box-shadow: 3px 3px 3px rgba(214, 214, 214, 0.603);
+}
+
+.theButton:hover{
+    background-color:rgb(250, 223, 230);
+    transition-duration: 0.3s;
+    color: white;
+    box-shadow: 2px 2px 3px rgb(250, 225, 239) inset;
+}
+
+.
+.secondBox img{
+    border-radius: 2px 2px 2px 16px;
+    box-shadow: 3px 3px 3px rgba(230, 220, 220, 0.603);
+}
+
+nav a.theButton{
+    margin-left: 25px;
+}
+
+.navButton{
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(235, 187, 209);
+    padding: 12px 25px;
+    font-family: 'Montserrat';
+    display: inline-block;
+    position: relative;
+    border-radius: 2px;
+}
+
+.testimonials{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.clientTests{
+    width: 45%;
+    padding: 45px;
+    border: 1px solid rgb(253, 216, 226);
+    box-sizing: border-box;
+    margin-top: 50px;
+}
+
+.clientTests p:last-of-type{
+    font-size: 0.9rem;
+    padding-left: 30px;
+}
+
+.dropdown{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    padding-top: 20px;
+    text-align: center;
+ 
+}
+
+.navButton:hover .dropdown{
+    display: block;
+    margin-left: -23px;
+}
+
+.dropdown .navButton {
+   width: 150px; 
+   background-color: rgb(250, 229, 243);
+   color: rgb(92, 81, 87);
+}
+
+.dropdown .navButton a{
+    width: 150px; 
+    background-color: rgb(250, 227, 237);
+    color: rgb(92, 81, 87);
+ }
+
+ footer{
+    min-height: 75px;
+    background-color: rgb(253, 230, 237);
+    text-align: center;
+    padding-top: 25px;
+    font-size: 0.7rem;
+    color:rgb(92, 81, 87);
+    font-family: 'Montserrat';
+ }
+
+ p footer{
+     font-size: 10px;
+ }
+
+ 
+.middle{
+    height: 60px;
+}
+
+ .middle2{
+    height: 600px;
+    /* margin-left: auto;
+    margin-right: auto;
+    /* margin-top: 30px; */
+    margin-bottom: 65px; 
+    /* border-bottom: 1px solid rgb(228, 171, 185); */
+    /* background-image: url(images/hotel.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; */
+}
+
+.imageHotel {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+
+.middle2HoverText{
+    transition: 1s ease;
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.middle2:hover .imageHotel {
+    opacity: 0.5;
+  }
+  
+  .middle2:hover .middle2HoverText {
+    opacity: 1;
+  }
+  
+  .textHotel {
+    background-color:rgba(236, 183, 197, 0.986);
+    color: white;
+    font-size: 25px;
+    font-family: 'Montserrat';
+    padding: 16px 38px;
+  }
+
+
+#aboutUs{
+    min-height: 130px;
+    text-align: center;
+}
+
+.abtUsFlex{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.abtUsFlex p{
+    flex: 1;
+    padding-right: 25px;
+    text-align: justify;
+}

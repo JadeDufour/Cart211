@@ -1,0 +1,449 @@
+html{
+    height: 100%;
+    /* background-image: linear-gradient(rgb(255, 193, 211),rgb(255, 245, 245)); */
+    background-repeat: no-repeat;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(95, 85, 85);
+    
+}
+
+body {
+    /* background-image: url(images/rose.png);
+    background-position: top center;
+    background-repeat: no-repeat; */
+    font-family: "Montserrat";
+    /* changed px to rem, we read it is better for visually impaired people for browsing purposes */
+    font-size: 1.2rem;
+}
+
+a{
+    color: rgb(228, 171, 185);;
+    text-decoration: none;
+}
+
+.container {
+    width: 1024px;
+    min-height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 110px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1.2px solid rgb(235, 187, 209);
+}
+
+section{
+    margin-top: 20px;
+    margin-bottom: 120px;
+    border-bottom: 1.2px solid rgb(235, 187, 209);
+    padding-bottom: 60px;
+    align-items: center;
+}
+
+main {
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.main2{
+    min-height: 300px;
+    padding-top: 50px;
+    justify-content: center;
+    text-align: center;
+}
+
+.flexBoxes {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+.fboxes1 {
+    background-image: url(images/flowers.jpg);
+    background-size: cover;
+    background-position: bottom;
+    min-height: 250px;
+    width: 30%;   
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
+.fboxes2 {
+    background-image: url(images/couple.jpg);
+    background-size: cover;
+    background-position: bottom;
+    min-height: 250px;
+    width: 30%;
+   }
+
+
+
+.fboxes3 {
+    background-image: url(images/twoside.jpg);
+    background-size: cover;
+    background-position: bottom;
+    min-height: 250px;
+    width: 30%;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+ }
+
+.fboxes1, .fboxes2 , .fboxes3{
+    padding: 30px 30px 20px 30px;
+    box-sizing: border-box;
+    box-shadow: 3px 3px 2px rgba(177, 177, 177, 0.603);
+}
+
+.mainBox {
+   flex: 2;
+   padding-right: 100px;
+}
+
+.secondBox {
+    flex: 1;
+    padding-top: 20px;
+}
+
+h1{
+    /* changed px to rem  */
+    font-size: 4rem;
+    font-family: "Caveat";
+    /* margin-bottom: 1rem; */
+}
+
+h2{
+    font-size: 3rem;
+    font-family: "Caveat";
+    color: rgb(243, 237, 230);
+    margin-top: 20px;
+}
+
+h4{
+    font-size: 1.5rem;
+    font-family: "Montserrat";
+    color: rgb(180, 159, 164);
+    margin-top: -20px;
+    margin-bottom: 30px;
+}
+
+p{
+    line-height: 1.75rem;
+    margin-bottom: 0.5rem;
+}
+
+.flexBoxes p {
+    font-size: 0.7rem;
+    line-height: 1.2rem;
+    color:rgb(243, 237, 230);
+    margin-top: 10px;
+}
+
+.flexBoxes i{
+    font-size: 100px;
+    color:rgb(255, 245, 245);
+    padding-top: 30px;
+}
+
+
+.theButton{
+    background-color:white;
+    color: rgb(248, 193, 211);
+    font-family: "Montserrat";
+    padding: 10px 25px;
+    display: inline-block;
+    margin-top: 10px;
+    border-radius: 2px;
+    box-shadow: 3px 3px 3px rgba(214, 214, 214, 0.603);
+}
+
+.theButton:hover{
+    background-color:rgb(250, 223, 230);
+    transition-duration: 0.3s;
+    color: white;
+    box-shadow: 2px 2px 3px rgb(250, 225, 239) inset;
+}
+
+
+.secondBox img{
+    border-radius: 2px 2px 2px 16px;
+    box-shadow: 3px 3px 3px rgba(230, 220, 220, 0.603);
+}
+
+nav a.theButton{
+    margin-left: 25px;
+}
+
+.navButton{
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(235, 187, 209);
+    padding: 12px 25px;
+    font-family: 'Montserrat';
+    display: inline-block;
+    position: relative;
+    border-radius: 2px;
+}
+
+.testimonials{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.clientTests{
+    width: 45%;
+    padding: 45px;
+    border: 1px solid rgb(253, 216, 226);
+    box-sizing: border-box;
+    margin-top: 50px;
+}
+
+.clientTests p:last-of-type{
+    font-size: 0.9rem;
+    padding-left: 30px;
+}
+
+.dropdown{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    padding-top: 20px;
+    text-align: center;
+ 
+}
+
+.navButton:hover .dropdown{
+    display: block;
+    margin-left: -23px;
+}
+
+.dropdown .navButton {
+   width: 150px; 
+   background-color: rgb(250, 229, 243);
+   color: rgb(92, 81, 87);
+}
+
+.dropdown .navButton a{
+    width: 150px; 
+    background-color: rgb(250, 227, 237);
+    color: rgb(92, 81, 87);
+ }
+
+ footer{
+    min-height: 75px;
+    background-color: rgb(253, 230, 237);
+    text-align: center;
+    padding-top: 20px;
+    font-size: 0.7rem;
+    color:rgb(92, 81, 87);
+    font-family: 'Montserrat';
+ }
+
+ p footer{
+     font-size: 10px;
+ }
+
+ .goUp{
+    min-height: 60px;
+    margin-top: 90px;
+    text-align: center;
+ }
+
+ #organization{
+    height: 100px;
+ }
+/* 
+ #organiInfo {
+    width: 100%;
+    padding: 50px 0;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 1rem;
+    background-color: lightblue;
+    margin-top: 20px;
+    display: none;
+  }
+
+   .button {
+    display: inline-block;
+    border-radius: 3px;
+    background-color: rgb(228, 171, 185);
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 20px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+  .flexButtons{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    
+  }
+
+  .b1 {
+
+    min-height: 250px;
+    width: 100%;   
+ 
+}
+
+.b2 {
+
+    min-height: 250px;
+    width: 100%;
+   }
+
+
+
+.b3 {
+
+    min-height: 250px;
+    width: 100%;
+
+ }
+
+.b1, .b2 , .b3{
+    padding: 30px 30px 20px 30px;
+    box-sizing: border-box;}
+     */
+
+
+    * {box-sizing:border-box}
+
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+    }
+    
+    /* Hide the images by default */
+    .mySlides {
+      display: none;
+    }
+    
+    /* Next & previous buttons */
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -22px;
+      padding: 16px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      /* user-select: none; */
+    }
+    
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+    
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover, .next:hover {
+      background-color: rgba(0,0,0,0.8);
+    }
+    
+    /* Caption text */
+    .text {
+      color: #f2f2f2;
+      font-size: 25px;
+      padding: 8px 12px;
+      font-family: "Caveat";
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+    
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+    
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+    
+    .active, .dot:hover {
+      background-color: #717171;
+    }
+    
+    /* Fading animation */
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+    
+    @-webkit-keyframes fade {
+      from {opacity: .4}
+      to {opacity: 1}
+    }
+    
+    @keyframes fade {
+      from {opacity: .4}
+      to {opacity: 1}
+    }
