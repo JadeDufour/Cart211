@@ -1,8 +1,5 @@
 html{
     height: 100%; 
-    /* background-image: url(images/franca.jpg);
-    background-size: cover; */
-    /* background-image: linear-gradient(rgb(255, 193, 211),rgb(255, 245, 245)); */
     background-repeat: no-repeat;
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(95, 85, 85);
@@ -11,27 +8,26 @@ html{
 }
 
 body {
-    /* background-image: url(images/rose.png);
-    background-position: top center;
-    background-repeat: no-repeat; */
     font-family: "Montserrat";
     /* changed px to rem, we read it is better for visually impaired people for browsing purposes */
     font-size: 1.2rem;
    
 }
 
+/* styling the links */
 a{
     color: rgb(228, 171, 185);;
     text-decoration: none;
 }
 
-
+/* the two containers organizing and styling the page */
 .container {
     width: 1024px;
-    min-height: 300px;
+    min-height: 200px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
+    margin-bottom: 10px;
   
 }
 
@@ -40,7 +36,7 @@ a{
     min-height: 300px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 30px;
+    margin-top: 100px;
     margin-bottom: 110px;
 }
 
@@ -62,22 +58,30 @@ section{
 
 main {
     min-height: 350px;
-    /* display: flex; */
     align-items: center;
     margin-bottom: 60px;
+    margin-top: 20px;
     padding-bottom: 20px;
+    padding-top: 50px;
     text-align: center;
     border-bottom: 1px solid rgb(248, 193, 211);
 }
 
+main p{
+    text-align: justify;
+}
 
+/* our navigation cards */
 .flexBoxes {
     display: flex;
     justify-content: space-between;
     text-align: center;
 }
 
-
+.flexBoxes :hover{
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+  }
 
 .fboxes1 {
     background-image: url(images/flowers.jpg);
@@ -107,12 +111,21 @@ main {
     padding: 30px 30px 20px 30px;
     box-sizing: border-box;
     box-shadow: 3px 3px 3px rgba(177, 177, 177, 0.603);
-
 }
-/* .mainBox {
-   flex: 1;
-   padding-right: 100px;
-} */
+
+.flexBoxes p {
+    font-size: 0.7rem;
+    line-height: 1.2rem;
+    color:rgb(243, 237, 230);
+    margin-top: 10px;
+}
+
+.flexBoxes i{
+    font-size: 100px;
+    color:rgb(255, 255, 255);
+    padding-top: 30px;
+}
+
 
 .secondBox {
     flex: 1;
@@ -121,7 +134,7 @@ main {
 
 h1{
     /* changed px to rem  */
-    font-size: 4rem;
+    font-size: 3.5rem;
     font-family: "Caveat";
      margin-bottom: 1rem; 
 }
@@ -134,25 +147,27 @@ h2{
 }
 
 
+h4{
+    font-size: 1.4rem;
+    font-family: "Dancing Script";
+    color: rgb(105, 98, 102);
+}
+
+h5{
+    font-size: 1.3rem;
+    font-family: "Montserrat";
+    color: rgb(180, 159, 164);
+    margin-top: -20px;
+    margin-bottom: 30px;
+}
+
+
 p{
     line-height: 1.75rem;
     margin-bottom: 0.5rem;
 }
 
-.flexBoxes p {
-    font-size: 0.7rem;
-    line-height: 1.2rem;
-    color:rgb(243, 237, 230);
-    margin-top: 10px;
-}
-
-.flexBoxes i{
-    font-size: 100px;
-    color:rgb(255, 245, 245);
-    padding-top: 30px;
-}
-
-
+/* a button linking to a section lower on the page */
 .theButton{
     background-color:white;
     color: rgb(248, 193, 211);
@@ -165,17 +180,12 @@ p{
 }
 
 .theButton:hover{
-    background-color:rgb(250, 223, 230);
+    background-color:rgb(245, 209, 219);
     transition-duration: 0.3s;
     color: white;
     box-shadow: 2px 2px 3px rgb(250, 225, 239) inset;
 }
 
-.
-.secondBox img{
-    border-radius: 2px 2px 2px 16px;
-    box-shadow: 3px 3px 3px rgba(230, 220, 220, 0.603);
-}
 
 nav a.theButton{
     margin-left: 25px;
@@ -191,6 +201,13 @@ nav a.theButton{
     position: relative;
     border-radius: 2px;
 }
+
+.secondBox img{
+    border-radius: 2px 2px 2px 16px;
+    box-shadow: 3px 3px 3px rgba(230, 220, 220, 0.603);
+}
+
+/* our fake testimonials */
 
 .testimonials{
     display: flex;
@@ -209,9 +226,12 @@ nav a.theButton{
 }
 
 .clientTests p:last-of-type{
-    font-size: 0.9rem;
+    font-size: 1.2rem;
     padding-left: 30px;
+    font-family: 'Dancing Script';
 }
+
+/* the navigation menu with the dropdown */
 
 .dropdown{
     display: none;
@@ -219,29 +239,34 @@ nav a.theButton{
     z-index: 1;
     padding-top: 20px;
     text-align: center;
- 
 }
 
+.navButton:hover{
+    background-color:rgb(250, 223, 230);
+    transition-duration: 0.3s;
+}
 .navButton:hover .dropdown{
     display: block;
-    margin-left: -23px;
+    margin-left: -28px;
 }
 
+
 .dropdown .navButton {
-   width: 150px; 
-   background-color: rgb(250, 229, 243);
+   width: 200px; 
+   background-color: rgb(250, 223, 230);
    color: rgb(92, 81, 87);
 }
 
 .dropdown .navButton a{
-    width: 150px; 
-    background-color: rgb(250, 227, 237);
+    width: 200px; 
+    background-color: rgb(250, 223, 230);
     color: rgb(92, 81, 87);
  }
 
+ /* the footer */
  footer{
     min-height: 75px;
-    background-color: rgb(253, 230, 237);
+    background-color: rgb(247, 212, 222);
     text-align: center;
     padding-top: 25px;
     font-size: 0.7rem;
@@ -260,17 +285,11 @@ nav a.theButton{
 
  .middle2{
     height: 600px;
-    /* margin-left: auto;
-    margin-right: auto;
-    /* margin-top: 30px; */
-    margin-bottom: 65px; 
-    /* border-bottom: 1px solid rgb(228, 171, 185); */
-    /* background-image: url(images/hotel.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center; */
+    margin-bottom: 90px; 
+  
 }
 
+/* the main image of the index page (the venue) */
 .imageHotel {
     opacity: 1;
     display: block;
@@ -280,14 +299,15 @@ nav a.theButton{
     backface-visibility: hidden;
   }
 
+  /* the textt hat appears on the image when mouse is hovering on the image */
 .middle2HoverText{
     transition: 1s ease;
     opacity: 0;
     position: absolute;
-    top: 100%;
+    top: 80%;
     left: 50%;
     transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
+    /* -ms-transform: translate(-50%, -50%); */
     text-align: center;
 }
 
@@ -302,17 +322,19 @@ nav a.theButton{
   .textHotel {
     background-color:rgba(236, 183, 197, 0.986);
     color: white;
-    font-size: 25px;
-    font-family: 'Montserrat';
+    font-size: 1.7rem;
+    font-family: 'Dancing Script';
     padding: 16px 38px;
   }
 
+  /* a link to the About Us section */
 
 #aboutUs{
     min-height: 130px;
     text-align: center;
 }
 
+/* the section has display Flex so the img and the text can squeeze side by side in th div */
 .abtUsFlex{
     display: flex;
     justify-content: space-between;
@@ -324,3 +346,90 @@ nav a.theButton{
     padding-right: 25px;
     text-align: justify;
 }
+
+/* the chat pop up fixed on the lowetr right side of the page. It is not actually functionnal but kinda displays the illusion of a working chat box */
+
+* {box-sizing: border-box;}
+
+/* Button used to open the chat form - fixed at the bottom of the page */
+.open-button {
+  background-color: rgb(243, 177, 191);
+  color: white;
+  padding: 16px 18px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 250px;
+  font-family: 'Dancing Script';
+  font-size: 1.2rem;
+}
+
+
+/* The popup chat - hidden by default with Display:none */
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 15px;
+  background-color: white;
+}
+
+/* Full-width text area */
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 9px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 200px;
+  border-radius: 8px;
+}
+
+/* When the textarea gets focus */
+.form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/send button */
+.form-container .btn {
+  background-color: rgb(247, 186, 201);
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: rgb(218, 129, 146);
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+/* the img of the line organizing the sections */
+
+.line{
+    width: 1024px;
+    padding-left: 200px;
+    margin-top: 50px;
+  }
+  

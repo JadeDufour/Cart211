@@ -1,16 +1,10 @@
 html{
     height: 100%;
-    /* background-image: linear-gradient(rgb(255, 193, 211),rgb(255, 245, 245)); */
-    background-repeat: no-repeat;
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(95, 85, 85);
-    
 }
 
 body {
-    /* background-image: url(images/rose.png);
-    background-position: top center;
-    background-repeat: no-repeat; */
     font-family: "Montserrat";
     /* changed px to rem, we read it is better for visually impaired people for browsing purposes */
     font-size: 1.2rem;
@@ -21,6 +15,7 @@ a{
     text-decoration: none;
 }
 
+/* which contains everything */
 .container {
     width: 1024px;
     min-height: 300px;
@@ -61,11 +56,35 @@ main {
     text-align: center;
 }
 
+/* 'follow us on instagram' */
+
+
+.instagram{
+  margin-top: 140px;
+  margin-bottom: 40px;
+ text-align: center;
+ font-family: 'Dancing Script';
+ font-size: 1.5rem;
+}
+
+.instaPics{
+  display: flex;
+}
+
+/* our navigation cards */
+
 .flexBoxes {
     display: flex;
     justify-content: space-between;
     text-align: center;
     margin-top: 30px;
+    border-top: 1px solid rgb(235, 179, 193);
+    padding-top: 55px;
+}
+
+.flexBoxes :hover{
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
 }
 
 
@@ -75,8 +94,6 @@ main {
     background-position: bottom;
     min-height: 250px;
     width: 30%;   
-    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-    filter: grayscale(100%);
 }
 
 .fboxes2 {
@@ -95,8 +112,7 @@ main {
     background-position: bottom;
     min-height: 250px;
     width: 30%;
-    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-    filter: grayscale(100%);
+ 
  }
 
 .fboxes1, .fboxes2 , .fboxes3{
@@ -104,6 +120,21 @@ main {
     box-sizing: border-box;
     box-shadow: 3px 3px 2px rgba(177, 177, 177, 0.603);
 }
+
+
+.flexBoxes p {
+  font-size: 0.7rem;
+  line-height: 1.2rem;
+  color:rgb(243, 237, 230);
+  margin-top: 10px;
+}
+
+.flexBoxes i{
+  font-size: 100px;
+  color:rgb(252, 252, 252);
+  padding-top: 30px;
+}
+
 
 .mainBox {
    flex: 2;
@@ -117,7 +148,7 @@ main {
 
 h1{
     /* changed px to rem  */
-    font-size: 4rem;
+    font-size: 3.5rem;
     font-family: "Caveat";
     /* margin-bottom: 1rem; */
 }
@@ -137,41 +168,27 @@ h4{
     margin-bottom: 30px;
 }
 
+h5{
+  font-size: 2.4rem;
+  font-family: 'Dancing Script';
+  color: rgb(95, 85, 85);
+}
+
+h6{
+  font-size: 2.3rem;
+  font-family: 'Caveat';
+  color: white;
+}
+
+h3{
+  font-size: 1.5rem;
+  font-family: 'Dancing Script';
+  color: white;
+}
+
 p{
     line-height: 1.75rem;
     margin-bottom: 0.5rem;
-}
-
-.flexBoxes p {
-    font-size: 0.7rem;
-    line-height: 1.2rem;
-    color:rgb(243, 237, 230);
-    margin-top: 10px;
-}
-
-.flexBoxes i{
-    font-size: 100px;
-    color:rgb(255, 245, 245);
-    padding-top: 30px;
-}
-
-
-.theButton{
-    background-color:white;
-    color: rgb(248, 193, 211);
-    font-family: "Montserrat";
-    padding: 10px 25px;
-    display: inline-block;
-    margin-top: 10px;
-    border-radius: 2px;
-    box-shadow: 3px 3px 3px rgba(214, 214, 214, 0.603);
-}
-
-.theButton:hover{
-    background-color:rgb(250, 223, 230);
-    transition-duration: 0.3s;
-    color: white;
-    box-shadow: 2px 2px 3px rgb(250, 225, 239) inset;
 }
 
 
@@ -180,8 +197,11 @@ p{
     box-shadow: 3px 3px 3px rgba(230, 220, 220, 0.603);
 }
 
+
+
 nav a.theButton{
-    margin-left: 25px;
+    margin-left: 20px;
+ 
 }
 
 .navButton{
@@ -195,6 +215,14 @@ nav a.theButton{
     border-radius: 2px;
 }
 
+/* the img of the line organizing the sections */
+
+.line{
+  width: 1024px;
+  padding-left: 200px;
+}
+
+/* our fake testimonials */
 .testimonials{
     display: flex;
     flex-wrap: wrap;
@@ -215,35 +243,43 @@ nav a.theButton{
     padding-left: 30px;
 }
 
+/* the navigation menu with the dropdown */
 .dropdown{
     display: none;
     position: absolute;
     z-index: 1;
     padding-top: 20px;
     text-align: center;
- 
 }
 
 .navButton:hover .dropdown{
-    display: block;
-    margin-left: -23px;
+  display: block;
+  margin-left: -28px;
+}
+
+.navButton:hover{
+  background-color:rgb(250, 223, 230);
+  transition-duration: 0.3s;
 }
 
 .dropdown .navButton {
-   width: 150px; 
-   background-color: rgb(250, 229, 243);
-   color: rgb(92, 81, 87);
+ width: 200px; 
+ background-color: rgb(250, 223, 230);
+ color: rgb(92, 81, 87);
 }
 
 .dropdown .navButton a{
-    width: 150px; 
-    background-color: rgb(250, 227, 237);
-    color: rgb(92, 81, 87);
- }
+  width: 200px;
+  background-color: rgb(250, 223, 230);
+  color: rgb(92, 81, 87);
+}
+
+
+/* The footer */
 
  footer{
     min-height: 75px;
-    background-color: rgb(253, 230, 237);
+    background-color: rgb(247, 212, 222);
     text-align: center;
     padding-top: 20px;
     font-size: 0.7rem;
@@ -255,110 +291,35 @@ nav a.theButton{
      font-size: 10px;
  }
 
+ /* To go all the way up the page */
+
  .goUp{
     min-height: 60px;
     margin-top: 90px;
     text-align: center;
  }
 
- #organization{
-    height: 100px;
- }
-/* 
- #organiInfo {
-    width: 100%;
-    padding: 50px 0;
-    margin-bottom: 50px;
-    text-align: center;
-    font-size: 1rem;
-    background-color: lightblue;
-    margin-top: 20px;
-    display: none;
-  }
+ #services{
+  min-height: 300px;
+  padding-top: 50px;
+  justify-content: center;
+  text-align: justify;
+ } 
 
-   .button {
-    display: inline-block;
-    border-radius: 3px;
-    background-color: rgb(228, 171, 185);
-    border: none;
-    color: #FFFFFF;
-    text-align: center;
-    font-size: 20px;
-    padding: 20px;
-    width: 200px;
-    transition: all 0.5s;
-    cursor: pointer;
-    margin: 5px;
-  }
-  
-  .button span {
-    cursor: pointer;
-    display: inline-block;
-    position: relative;
-    transition: 0.5s;
-  }
-  
-  .button span:after {
-    content: '\00bb';
-    position: absolute;
-    opacity: 0;
-    top: 0;
-    right: -20px;
-    transition: 0.5s;
-  }
-  
-  .button:hover span {
-    padding-right: 25px;
-  }
-  
-  .button:hover span:after {
-    opacity: 1;
-    right: 0;
-  }
+/* A slideshow of our 'previous' work */
 
-  .flexButtons{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        margin-bottom: 10px;
+
+     * {
+      box-sizing: border-box;
+    }
     
-  }
-
-  .b1 {
-
-    min-height: 250px;
-    width: 100%;   
- 
-}
-
-.b2 {
-
-    min-height: 250px;
-    width: 100%;
-   }
-
-
-
-.b3 {
-
-    min-height: 250px;
-    width: 100%;
-
- }
-
-.b1, .b2 , .b3{
-    padding: 30px 30px 20px 30px;
-    box-sizing: border-box;}
-     */
-
-
-    * {box-sizing:border-box}
-
-    /* Slideshow container */
-    .slideshow-container {
-      max-width: 1000px;
+    img {
+      vertical-align: middle;
+    }
+    
+    /* Position the image container (needed to position the left and right arrows) */
+    .container2 {
       position: relative;
-      margin: auto;
     }
     
     /* Hide the images by default */
@@ -366,20 +327,26 @@ nav a.theButton{
       display: none;
     }
     
+    /* Add a pointer when hovering over the thumbnail images */
+    .cursor {
+      cursor: pointer;
+    }
+    
     /* Next & previous buttons */
-    .prev, .next {
+    .prev,
+    .next {
       cursor: pointer;
       position: absolute;
-      top: 50%;
+      top: 40%;
       width: auto;
-      margin-top: -22px;
       padding: 16px;
-      color: white;
+      margin-top: -50px;
+      color: rgb(78, 78, 78);
       font-weight: bold;
-      font-size: 18px;
-      transition: 0.6s ease;
+      font-size: 20px;
       border-radius: 0 3px 3px 0;
-      /* user-select: none; */
+      user-select: none;
+      -webkit-user-select: none;
     }
     
     /* Position the "next button" to the right */
@@ -389,61 +356,178 @@ nav a.theButton{
     }
     
     /* On hover, add a black background color with a little bit see-through */
-    .prev:hover, .next:hover {
-      background-color: rgba(0,0,0,0.8);
-    }
-    
-    /* Caption text */
-    .text {
-      color: #f2f2f2;
-      font-size: 25px;
-      padding: 8px 12px;
-      font-family: "Caveat";
-      position: absolute;
-      bottom: 8px;
-      width: 100%;
-      text-align: center;
+    .prev:hover,
+    .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
     }
     
     /* Number text (1/3 etc) */
     .numbertext {
-      color: #f2f2f2;
-      font-size: 12px;
+      color: #464646;
+      font-size: 1.5rem;
       padding: 8px 12px;
       position: absolute;
       top: 0;
     }
     
-    /* The dots/bullets/indicators */
-    .dot {
-      cursor: pointer;
-      height: 15px;
-      width: 15px;
-      margin: 0 2px;
-      background-color: #bbb;
-      border-radius: 50%;
-      display: inline-block;
-      transition: background-color 0.6s ease;
+    /* Container for image text */
+    .caption-container {
+      text-align: center;
+      background-color: rgb(231, 179, 192);
+      padding: 10px 16px;
+      font-family: 'Dancing Script', cursive;
+      color: white;
+      font-size: 1.5rem;
     }
     
-    .active, .dot:hover {
-      background-color: #717171;
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
     }
     
-    /* Fading animation */
-    .fade {
-      -webkit-animation-name: fade;
-      -webkit-animation-duration: 1.5s;
-      animation-name: fade;
-      animation-duration: 1.5s;
+    /* Six columns side by side */
+    .column {
+      float: left;
+      width: 16.66%;
     }
     
-    @-webkit-keyframes fade {
-      from {opacity: .4}
-      to {opacity: 1}
+    /* Add a transparency effect for thumnbail images */
+    .demo {
+      opacity: 0.6;
     }
     
-    @keyframes fade {
-      from {opacity: .4}
-      to {opacity: 1}
+    .active,
+    .demo:hover {
+      opacity: 1;
     }
+
+  /* The celebrity wedding section, where cards flip */
+  .h5Celeb{
+    text-align: center;
+    margin-top: 50px;
+  }
+    
+  .celebWork{
+    min-height: 300px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .celebtext{
+    flex: 1;
+    margin-left: 40px;
+    text-align: justify;
+    font-size: 1.1rem;
+  }
+
+
+    .flip-card {
+      background-color: transparent;
+      width: 380px;
+      height: 280px;
+      perspective: 1000px;
+    }
+    
+    .flip-card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.6s;
+      transform-style: preserve-3d;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    }
+    
+    .flip-card:hover .flip-card-inner {
+      transform: rotateY(180deg);
+    }
+    
+    .flip-card-front, .flip-card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+    }
+    
+    .flip-card-front {
+      background-image: url(images/npwed.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: bottom;
+    }
+    
+    .flip-card-back {
+      background-color:rgb(245, 212, 222);
+      color: white;
+      transform: rotateY(180deg);
+     padding: 20px;
+    }
+
+
+
+    .celebWork2{
+      min-height: 300px;
+      margin-top: 50px;
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    .celebtext2{
+      flex: 1;
+      margin-left: 40px;
+      text-align: justify;
+      font-size: 1.1rem;
+    }
+  
+  
+      .flip-card2 {
+        background-color: transparent;
+        width: 380px;
+        height: 280px;
+        perspective: 1000px;
+      }
+      
+      .flip-card-inner2 {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      }
+      
+      .flip-card2:hover .flip-card-inner2 {
+        transform: rotateY(180deg);
+      }
+      
+      .flip-card-front2, .flip-card-back2 {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+      }
+      
+      .flip-card-front2 {
+        background-image: url(images/mgid_ao_image_mtv.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: bottom;
+      }
+      
+      .flip-card-back2 {
+        background-color:rgb(245, 212, 222);
+        color: white;
+        transform: rotateY(180deg);
+       padding: 20px;
+      }
+  
+      /* the fake kim kardashian tweet */
+      .kimtweet{
+        text-align: center;
+        min-height: 100px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+      }

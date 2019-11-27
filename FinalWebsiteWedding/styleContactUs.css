@@ -1,6 +1,5 @@
 html{
     height: 100%;
-    /* background-image: linear-gradient(rgb(255, 193, 211),rgb(255, 245, 245)); */
     background-repeat: no-repeat;
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(95, 85, 85);
@@ -8,9 +7,6 @@ html{
 }
 
 body {
-    /* background-image: url(images/rose.png);
-    background-position: top center;
-    background-repeat: no-repeat; */
     font-family: "Montserrat";
     /* changed px to rem, we read it is better for visually impaired people for browsing purposes */
     font-size: 1.2rem;
@@ -21,6 +17,7 @@ a{
     text-decoration: none;
 }
 
+/* the container of the page */
 .container {
     width: 1024px;
     min-height: 300px;
@@ -61,12 +58,18 @@ main {
     text-align: center;
 }
 
+/* our navigation cards */
+
 .flexBoxes {
     display: flex;
     justify-content: space-between;
     text-align: center;
 }
 
+.flexBoxes :hover{
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+  }
 
 .fboxes1 {
     background-image: url(images/flowers.jpg);
@@ -74,8 +77,6 @@ main {
     background-position: bottom;
     min-height: 300px;
     width: 30%;   
-    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-    filter: grayscale(100%);
 }
 
 .fboxes2 {
@@ -84,11 +85,8 @@ main {
     background-position: bottom;
     min-height: 300px;
     width: 30%;
-    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-    filter: grayscale(100%);
+
 }
-
-
 
 .fboxes3 {
     background-image: url(images/twoside.jpg);
@@ -104,6 +102,22 @@ main {
     box-shadow: 3px 3px 2px rgba(177, 177, 177, 0.603);
 
 }
+
+
+.flexBoxes p {
+    font-size: 0.7rem;
+    line-height: 1.2rem;
+    color:rgb(243, 237, 230);
+    margin-top: 10px;
+}
+
+.flexBoxes i{
+    font-size: 100px;
+    color:rgb(252, 252, 252);
+    padding-top: 30px;
+}
+
+
 .mainBox {
    flex: 2;
    padding-right: 100px;
@@ -116,9 +130,8 @@ main {
 
 h1{
     /* changed px to rem  */
-    font-size: 4rem;
+    font-size: 3.5rem;
     font-family: "Caveat";
-    /* margin-bottom: 1rem; */
 }
 
 h2{
@@ -141,39 +154,6 @@ p{
     margin-bottom: 0.5rem;
 }
 
-.flexBoxes p {
-    font-size: 0.7rem;
-    line-height: 1.2rem;
-    color:rgb(243, 237, 230);
-    margin-top: 10px;
-}
-
-.flexBoxes i{
-    font-size: 100px;
-    color:rgb(255, 245, 245);
-    padding-top: 30px;
-}
-
-
-.theButton{
-    background-color:white;
-    color: rgb(248, 193, 211);
-    font-family: "Montserrat";
-    padding: 10px 25px;
-    display: inline-block;
-    margin-top: 10px;
-    border-radius: 2px;
-    box-shadow: 3px 3px 3px rgba(214, 214, 214, 0.603);
-}
-
-.theButton:hover{
-    background-color:rgb(250, 223, 230);
-    transition-duration: 0.3s;
-    color: white;
-    box-shadow: 2px 2px 3px rgb(250, 225, 239) inset;
-}
-
-
 .secondBox img{
     border-radius: 2px 2px 2px 16px;
     box-shadow: 3px 3px 3px rgba(230, 220, 220, 0.603);
@@ -193,6 +173,8 @@ nav a.theButton{
     position: relative;
     border-radius: 2px;
 }
+
+/* our fake testimonials */
 
 .testimonials{
     display: flex;
@@ -214,35 +196,43 @@ nav a.theButton{
     padding-left: 30px;
 }
 
+/* the navigation menu with the dropdown */
+
 .dropdown{
     display: none;
     position: absolute;
     z-index: 1;
     padding-top: 20px;
     text-align: center;
- 
 }
 
 .navButton:hover .dropdown{
     display: block;
-    margin-left: -23px;
+    margin-left: -28px;
+}
+
+.navButton:hover{
+    background-color:rgb(250, 223, 230);
+    transition-duration: 0.3s;
 }
 
 .dropdown .navButton {
    width: 150px; 
-   background-color: rgb(250, 229, 243);
+   background-color: rgb(250, 223, 230);
    color: rgb(92, 81, 87);
 }
 
 .dropdown .navButton a{
     width: 150px; 
-    background-color: rgb(250, 227, 237);
+    background-color: rgb(250, 223, 230);
     color: rgb(92, 81, 87);
  }
 
+ /* The footer */
+
  footer{
     min-height: 75px;
-    background-color: rgb(253, 230, 237);
+    background-color: rgb(247, 212, 222);
     text-align: center;
     padding-top: 20px;
     font-size: 0.7rem;
@@ -253,6 +243,8 @@ nav a.theButton{
  p footer{
      font-size: 10px;
  }
+ 
+  /* To go all the way up the page */
 
  .goUp{
     min-height: 60px;
