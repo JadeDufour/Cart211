@@ -106,3 +106,18 @@ h3{
 .text{
     font-family: "Montserrat";
   }
+
+
+.linkWebsite{
+  font-family: 'montserrat';
+  font-size: 20px;
+  color: lightcoral;
+  text-decoration: none;
+}
+
+
+.link{
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 150px;
+}

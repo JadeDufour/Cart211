@@ -2,7 +2,6 @@
 
 body{
     background-color: lightpink;
-   
 }
 
 h1{
@@ -14,8 +13,10 @@ h1{
 }
 
 #big{
-    align-content: center;
-    margin: auto;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    width: 1024px;
 }
 
 h2{
@@ -58,4 +59,14 @@ h4{
     /*images sources*/
     color: darkviolet;
     font-size: 80%;
+}
+
+.explanation{
+    text-align: center;
+    min-height: 200px;
+    width: 700px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 20px;
+   margin-left: 150px;  
 }

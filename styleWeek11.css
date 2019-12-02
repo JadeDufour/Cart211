@@ -1,0 +1,51 @@
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(95, 85, 85);
+    background-image: linear-gradient( white, rgb(128, 212, 238));
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+body {
+    font-size: 1.2rem;
+}
+
+a{
+    color: rgb(77, 136, 214);;
+    text-decoration: none;
+}
+
+hr{
+    color: rgb(13, 128, 194);
+    size: 80%;
+    border-style: dashed;
+}
+/* the container of the page */
+.container {
+    width: 1024px;
+    min-height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 110px;
+    text-align: center;
+    align-content: center;
+}
+
+p{
+    font-family: 'Montserrat';
+}
+
+main{
+    margin-top: 60px;
+}
+
+h1{
+    font-family: "Caveat";
+    font-size: 30px;
+}
+
+h3{
+    font-family: "Caveat";
+    font-size: 20px;
+}
